@@ -9,21 +9,17 @@ class NameParserTest {
 
 class NameParser {
     public String parse(String[] names) {
-        //String result = "";
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < names.length; i++) {
             String firstName = names[i].split(" ")[0];
 
-            //result += firstName;
             result.append(firstName);
             if (i != names.length - 1) {
-                //result += ", ";
                 result.append(", ");
             }
         }
 
-        //return result;
         return String.valueOf(result);
     }
 }
